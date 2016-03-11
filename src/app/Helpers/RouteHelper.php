@@ -18,11 +18,11 @@ class RouteHelper
 
     public static function auth()
     {
-        Route::get(trans('routes.auth.login'), ['as' => 'login', 'uses' => 'Auth\AuthController@getLogin']);
-        Route::post(trans('routes.auth.login'), 'Auth\AuthController@postLogin');
+        Route::get(trans('admin::routes.auth.login'), ['as' => 'login', 'uses' => 'Auth\AuthController@getLogin']);
+        Route::post(trans('admin::routes.auth.login'), 'Auth\AuthController@postLogin');
         Route::get('logout', ['as' => 'logout', 'uses' => 'Auth\AuthController@getLogout']);
-        Route::get(trans('routes.auth.register'), 'Auth\AuthController@getRegister');
-        Route::post(trans('routes.auth.register'), 'Auth\AuthController@postRegister');
+        Route::get(trans('admin::routes.auth.register'), 'Auth\AuthController@getRegister');
+        Route::post(trans('admin::routes.auth.register'), 'Auth\AuthController@postRegister');
     }
 
 }

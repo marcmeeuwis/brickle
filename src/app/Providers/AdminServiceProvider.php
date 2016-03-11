@@ -32,6 +32,8 @@ class AdminServiceProvider extends ServiceProvider
         // Register package middleware
         new Kernel($this->app, $this->app['router']);
 
+        $this->loadTranslationsFrom(__DIR__.'/../../resources/lang', 'admin');
+
         // Load package routes
         $this->routes();
 
