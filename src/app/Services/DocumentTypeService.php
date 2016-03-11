@@ -2,13 +2,13 @@
 
 namespace Doitonlinemedia\Admin\App\Services;
 
-use App\Repositories\Document\DocumentRepository;
-use App\Repositories\DocumentTypes\DocumentTypesInterface;
-use App\Repositories\DocumentTypes\DocumentTypesRepository;
-use App\Repositories\Properties\PropertiesInterface;
-use App\Repositories\Properties\PropertiesRepository;
-use App\Repositories\Tabs\TabsInterface;
-use App\Repositories\Tabs\TabsRepository;
+use Doitonlinemedia\Admin\App\Repositories\Document\DocumentRepository;
+use Doitonlinemedia\Admin\App\Repositories\DocumentTypes\DocumentTypesInterface;
+use Doitonlinemedia\Admin\App\Repositories\DocumentTypes\DocumentTypesRepository;
+use Doitonlinemedia\Admin\App\Repositories\Properties\PropertiesInterface;
+use Doitonlinemedia\Admin\App\Repositories\Properties\PropertiesRepository;
+use Doitonlinemedia\Admin\App\Repositories\Tabs\TabsInterface;
+use Doitonlinemedia\Admin\App\Repositories\Tabs\TabsRepository;
 
 class DocumentTypeService
 {
