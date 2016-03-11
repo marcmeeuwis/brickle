@@ -7,8 +7,8 @@ use Doitonlinemedia\Admin\App\Models\Property;
 use Doitonlinemedia\Admin\App\Models\Tab;
 use Illuminate\Support\Facades\Request;
 use Laracasts\Utilities\JavaScript\JavaScriptFacade as JavaScript;
-use App\Services\DocumentTypeService;
-use App\Services\PropertyService;
+use Doitonlinemedia\Admin\App\Services\DocumentTypeService;
+use Doitonlinemedia\Admin\App\Services\PropertyService;
 use Pingpong\Modules\Routing\Controller;
 
 class DocumentTypeController extends Controller {
