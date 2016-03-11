@@ -1,5 +1,5 @@
 {
-    "name": "doitonlinemedia/admin",
+    "name": "doitonlinemedia/brickle",
     "license": "MIT",
     "authors": [
         {
@@ -14,7 +14,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Doitonlinemedia\\Admin\\": "src/"
+            "DoitOnlineMedia\\Admin\\": "src/"
         }
     }
 }
