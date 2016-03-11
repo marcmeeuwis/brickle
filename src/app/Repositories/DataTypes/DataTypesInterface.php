@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Repositories\DataTypes;
+namespace Doitonlinemedia\Admin\App\Repositories\DataTypes;
 
 interface DataTypesInterface
 {

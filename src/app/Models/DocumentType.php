@@ -1,6 +1,6 @@
 <?php
 
-namespace DoitOnlineMedia\Admin\App\Models;
+namespace Doitonlinemedia\Admin\App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
@@ -11,12 +11,12 @@ class DocumentType extends Model {
 
 	public function properties()
 	{
-		return $this->hasMany('DoitOnlineMedia\Admin\App\Models\Property');
+		return $this->hasMany('Doitonlinemedia\Admin\App\Models\Property');
 	}
 
 	public function tabs()
 	{
-		return $this->hasMany('DoitOnlineMedia\Admin\App\Models\Tab');
+		return $this->hasMany('Doitonlinemedia\Admin\App\Models\Tab');
 	}
 
 }

@@ -1,8 +1,8 @@
 <?php
 
-namespace DoitOnlineMedia\Admin\App\Providers;
+namespace Doitonlinemedia\Admin\App\Providers;
 
-use DoitOnlineMedia\Admin\App\Repositories\Document\DocumentRepository;
+use Doitonlinemedia\Admin\App\Repositories\Document\DocumentRepository;
 use Illuminate\Support\ServiceProvider;
 
 class ComposerServiceProvider extends ServiceProvider

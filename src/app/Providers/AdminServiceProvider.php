@@ -1,10 +1,10 @@
 <?php
 
-namespace DoitOnlineMedia\Admin\App\Providers;
+namespace Doitonlinemedia\Admin\App\Providers;
 
-use DoitOnlineMedia\Admin\App\Http\Kernel;
+use Doitonlinemedia\Admin\App\Http\Kernel;
 use Illuminate\Support\ServiceProvider;
-use Modules\Developer\Providers\DeveloperServiceProvider;
+use Doitonlinemedia\Admin\Modules\Developer\Providers\DeveloperServiceProvider;
 
 class AdminServiceProvider extends ServiceProvider
 {

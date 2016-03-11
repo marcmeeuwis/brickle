@@ -1,15 +1,15 @@
-<?php namespace DoitOnlineMedia\Admin\Modules\Developer\Http\Controllers;
+<?php namespace Doitonlinemedia\Admin\Modules\Developer\Http\Controllers;
 
-use App\Repositories\DocumentTypes\DocumentTypesRepository;
-use App\Repositories\Properties\PropertiesRepository;
-use App\Repositories\Tabs\TabsRepository;
+use Doitonlinemedia\Admin\App\Repositories\DocumentTypes\DocumentTypesRepository;
+use Doitonlinemedia\Admin\App\Repositories\Properties\PropertiesRepository;
+use Doitonlinemedia\Admin\App\Repositories\Tabs\TabsRepository;
 use Illuminate\Support\Facades\Input;
-use \Modules\Developer\Helpers\PropertyHelper;
-use App\Models\Property;
-use App\Repositories\DocumentTypes\DocumentTypesInterface;
-use App\Repositories\Tabs\TabsInterface;
+use Doitonlinemedia\Admin\Modules\Developer\Helpers\PropertyHelper;
+use Doitonlinemedia\Admin\App\Models\Property;
+use Doitonlinemedia\Admin\App\Repositories\DocumentTypes\DocumentTypesInterface;
+use Doitonlinemedia\Admin\App\Repositories\Tabs\TabsInterface;
 use Pingpong\Modules\Routing\Controller;
-use App\Repositories\Properties\PropertiesInterface;
+use Doitonlinemedia\Admin\App\Repositories\Properties\PropertiesInterface;
 
 class TabController extends Controller {
 

@@ -14,7 +14,7 @@
     },
     "autoload": {
         "psr-4": {
-            "DoitOnlineMedia\\Admin\\": "src/"
+            "Doitonlinemedia\\Admin\\": "src/"
         }
     }
 }

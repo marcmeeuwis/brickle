@@ -1,6 +1,6 @@
 <?php
 
-namespace DoitOnlineMedia\Admin\App\Models;
+namespace Doitonlinemedia\Admin\App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
@@ -11,7 +11,7 @@ class MenuItem extends Model {
 
 	public function menu()
 	{
-		return $this->belongsTo('DoitOnlineMedia\Admin\App\Models\Menu');
+		return $this->belongsTo('Doitonlinemedia\Admin\App\Models\Menu');
 	}
 
 }

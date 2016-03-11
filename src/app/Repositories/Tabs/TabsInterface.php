@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Repositories\Tabs;
+namespace Doitonlinemedia\Admin\App\Repositories\Tabs;
 
 interface TabsInterface
 {

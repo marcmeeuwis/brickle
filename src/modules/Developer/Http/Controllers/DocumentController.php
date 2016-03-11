@@ -1,4 +1,4 @@
-<?php namespace DoitOnlineMedia\Admin\Modules\Developer\Http\Controllers;
+<?php namespace Doitonlinemedia\Admin\Modules\Developer\Http\Controllers;
 
 use Pingpong\Modules\Routing\Controller;
 

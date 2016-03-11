@@ -1,4 +1,4 @@
-<?php namespace DoitOnlineMedia\Admin\App\Helpers;
+<?php namespace Doitonlinemedia\Admin\App\Helpers;
 
 use Illuminate\Support\Facades\Route;
 

@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Repositories\Properties;
+namespace Doitonlinemedia\Admin\App\Repositories\Properties;
 
-use DoitOnlineMedia\Admin\App\Models\Property;
+use Doitonlinemedia\Admin\App\Models\Property;
 use Illuminate\Support\Facades\Input;
 
 class PropertiesRepository

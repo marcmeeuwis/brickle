@@ -1,6 +1,6 @@
 <?php
 
-namespace DoitOnlineMedia\Admin\App\Http;
+namespace Doitonlinemedia\Admin\App\Http;
 
 class Kernel extends \App\Http\Kernel
 {
@@ -34,7 +34,7 @@ class Kernel extends \App\Http\Kernel
      * @var array
      */
     protected $routeMiddleware = [
-        'admin.auth' => \DoitOnlineMedia\Admin\App\Http\Middleware\Authenticate::class,
-        'admin.guest' => \DoitOnlineMedia\Admin\App\Http\Middleware\RedirectIfAuthenticated::class,
+        'admin.auth' => \Doitonlinemedia\Admin\App\Http\Middleware\Authenticate::class,
+        'admin.guest' => \Doitonlinemedia\Admin\App\Http\Middleware\RedirectIfAuthenticated::class,
     ];
 }

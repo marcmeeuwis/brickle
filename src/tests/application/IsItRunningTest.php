@@ -1,6 +1,6 @@
 <?php
 
-namespace DoitOnlineMedia\Admin\Tests\Application;
+namespace Doitonlinemedia\Admin\Tests\Application;
 
 /**
  * @backupGlobals disabled

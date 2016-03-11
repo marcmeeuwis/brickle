@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Repositories\PropertyValues;
+namespace Doitonlinemedia\Admin\App\Repositories\PropertyValues;
 
 interface PropertyValuesInterface
 {

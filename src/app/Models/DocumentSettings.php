@@ -1,6 +1,6 @@
 <?php
 
-namespace DoitOnlineMedia\Admin\App\Models;
+namespace Doitonlinemedia\Admin\App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
@@ -11,7 +11,7 @@ class DocumentSettings extends Model {
 
 	public function document()
 	{
-		return $this->belongsTo('DoitOnlineMedia\Admin\App\Models\Document');
+		return $this->belongsTo('Doitonlinemedia\Admin\App\Models\Document');
 	}
 
 }

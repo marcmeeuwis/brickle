@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Repositories\DataTypes;
+namespace Doitonlinemedia\Admin\App\Repositories\DataTypes;
 
-use DoitOnlineMedia\Admin\App\Models\DataType;
+use Doitonlinemedia\Admin\App\Models\DataType;
 use Illuminate\Support\Facades\Cache;
 
 class DataTypesRepository

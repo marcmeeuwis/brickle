@@ -1,10 +1,10 @@
 <?php
 
-namespace DoitOnlineMedia\Admin\Modules\Developer\Helpers;
+namespace Doitonlinemedia\Admin\Modules\Developer\Helpers;
 
-use DoitOnlineMedia\Admin\App\Models\DataType;
-use DoitOnlineMedia\Admin\App\Models\Tab;
-use DoitOnlineMedia\Admin\App\Models\Property;
+use Doitonlinemedia\Admin\App\Models\DataType;
+use Doitonlinemedia\Admin\App\Models\Tab;
+use Doitonlinemedia\Admin\App\Models\Property;
 
 class PropertyHelper {
 

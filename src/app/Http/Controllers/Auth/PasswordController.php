@@ -1,6 +1,6 @@
 <?php
 
-namespace  DoitOnlineMedia\Admin\App\Http\Controllers\Auth;
+namespace  Doitonlinemedia\Admin\App\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\ResetsPasswords;

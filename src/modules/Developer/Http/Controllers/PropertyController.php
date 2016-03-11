@@ -1,9 +1,9 @@
-<?php namespace DoitOnlineMedia\Admin\Modules\Developer\Http\Controllers;
+<?php namespace Doitonlinemedia\Admin\Modules\Developer\Http\Controllers;
 
-use App\Repositories\Properties\PropertiesInterface;
-use App\Repositories\Properties\PropertiesRepository;
-use App\Repositories\PropertyValues\PropertyValuesInterface;
-use App\Repositories\PropertyValues\PropertyValuesRepository;
+use Doitonlinemedia\Admin\App\Repositories\Properties\PropertiesInterface;
+use Doitonlinemedia\Admin\App\Repositories\Properties\PropertiesRepository;
+use Doitonlinemedia\Admin\App\Repositories\PropertyValues\PropertyValuesInterface;
+use Doitonlinemedia\Admin\App\Repositories\PropertyValues\PropertyValuesRepository;
 use Pingpong\Modules\Routing\Controller;
 
 class PropertyController extends Controller {

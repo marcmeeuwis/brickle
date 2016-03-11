@@ -1,6 +1,6 @@
 <?php
 
-namespace DoitOnlineMedia\Admin\Modules\Developer\Helpers;
+namespace Doitonlinemedia\Admin\Modules\Developer\Helpers;
 
 use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\File;

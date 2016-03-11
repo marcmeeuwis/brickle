@@ -1,6 +1,6 @@
 <?php
 
-namespace DoitOnlineMedia\Admin\App\Providers;
+namespace Doitonlinemedia\Admin\App\Providers;
 
 use Illuminate\Support\ServiceProvider;
 use Pingpong\Modules\Facades\Module;

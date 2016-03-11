@@ -1,6 +1,6 @@
 <?php
 
-namespace DoitOnlineMedia\Admin\App\Repositories;
+namespace Doitonlinemedia\Admin\App\Repositories;
 
 abstract class BaseRepository {
 

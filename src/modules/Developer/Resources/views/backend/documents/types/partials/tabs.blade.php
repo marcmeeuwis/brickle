@@ -10,7 +10,7 @@
     <tbody>
     @if($tabs)
         @foreach($tabs as $tab)
-            {!! \DoitOnlineMedia\Admin\Modules\Developer\Helpers\PropertyHelper::getTabTableRow($tab)->render() !!}
+            {!! \DDoitonlinemedia\Admin\Modules\Developer\Helpers\PropertyHelper::getTabTableRow($tab)->render() !!}
         @endforeach
     @endif
     </tbody>

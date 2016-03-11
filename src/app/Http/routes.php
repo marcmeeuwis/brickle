@@ -2,7 +2,7 @@
 
 Route::group([
 
-   'namespace' => 'DoitOnlineMedia\Admin\App\Http\Controllers',
+   'namespace' => 'Doitonlinemedia\Admin\App\Http\Controllers',
    'prefix' => config('admin.cms_path'),
    'as' => 'admin::',
    'middleware' => ['web']],

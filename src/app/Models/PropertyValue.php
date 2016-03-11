@@ -1,6 +1,6 @@
 <?php
 
-namespace DoitOnlineMedia\Admin\App\Models;
+namespace Doitonlinemedia\Admin\App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
@@ -11,7 +11,7 @@ class PropertyValue extends Model {
 
 	public function property()
 	{
-		return $this->belongsTo('DoitOnlineMedia\Admin\App\Models\Property', 'property_id');
+		return $this->belongsTo('Doitonlinemedia\Admin\App\Models\Property', 'property_id');
 	}
 
 }

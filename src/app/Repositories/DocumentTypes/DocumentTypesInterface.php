@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Repositories\DocumentTypes;
+namespace Doitonlinemedia\Admin\App\Repositories\DocumentTypes;
 
 interface DocumentTypesInterface
 {

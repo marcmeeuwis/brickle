@@ -1,4 +1,4 @@
-<?php namespace DoitOnlineMedia\Admin\Modules\Developer\Providers;
+<?php namespace Doitonlinemedia\Admin\Modules\Developer\Providers;
 
 use Illuminate\Support\ServiceProvider;
 
@@ -96,7 +96,7 @@ class DeveloperServiceProvider extends ServiceProvider {
 
 	public function routes()
 	{
-		$namespace = 'DoitOnlineMedia\Admin\Modules\Developer\Http\Controllers';
+		$namespace = 'Doitonlinemedia\Admin\Modules\Developer\Http\Controllers';
 		$path = __DIR__.'/../Http/';
 
 		app()->make('router')->group([

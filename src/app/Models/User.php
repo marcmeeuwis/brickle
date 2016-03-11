@@ -1,6 +1,6 @@
 <?php
 
-namespace DoitOnlineMedia\Admin\App\Models;
+namespace Doitonlinemedia\Admin\App\Models;
 
 use Illuminate\Foundation\Auth\User as Authenticatable;
 
@@ -18,11 +18,11 @@ class User extends Authenticatable
 
     public function profile()
     {
-        return $this->belongsTo('DoitOnlineMedia\Admin\App\Models\Profile');
+        return $this->belongsTo('Doitonlinemedia\Admin\App\Models\Profile');
     }
 
     public function documents()
     {
-        return $this->hasMany('DoitOnlineMedia\Admin\App\Models\Document');
+        return $this->hasMany('Doitonlinemedia\Admin\App\Models\Document');
     }
 }

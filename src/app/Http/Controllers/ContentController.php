@@ -1,10 +1,10 @@
 <?php
 
-namespace  DoitOnlineMedia\Admin\App\Http\Controllers;
+namespace  Doitonlinemedia\Admin\App\Http\Controllers;
 
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
-use DoitOnlineMedia\Admin\App\Repositories\Document\DocumentRepository;
+use Doitonlinemedia\Admin\App\Repositories\Document\DocumentRepository;
 use Krucas\Notification\Facades\Notification;
 
 class ContentController extends Controller

@@ -1,12 +1,12 @@
 <?php
 
-namespace App\Repositories\Tabs;
+namespace Doitonlinemedia\Admin\App\Repositories\Tabs;
 
-use App\Repositories\DocumentTypes\DocumentTypesInterface;
-use App\Repositories\DocumentTypes\DocumentTypesRepository;
-use App\Repositories\Properties\PropertiesInterface;
-use DoitOnlineMedia\Admin\App\Models\Tab;
-use App\Repositories\Properties\PropertiesRepository;
+use Doitonlinemedia\Admin\App\Repositories\DocumentTypes\DocumentTypesInterface;
+use Doitonlinemedia\Admin\App\Repositories\DocumentTypes\DocumentTypesRepository;
+use Doitonlinemedia\Admin\App\Repositories\Properties\PropertiesInterface;
+use Doitonlinemedia\Admin\App\Models\Tab;
+use Doitonlinemedia\Admin\App\Repositories\Properties\PropertiesRepository;
 
 class TabsRepository implements TabsInterface
 {

@@ -1,7 +1,7 @@
-<?php namespace DoitOnlineMedia\Admin\Modules\Developer\Http\Controllers;
+<?php namespace Doitonlinemedia\Admin\Modules\Developer\Http\Controllers;
 
-use App\Repositories\DataTypes\DataTypesInterface;
-use App\Repositories\DataTypes\DataTypesRepository;
+use Doitonlinemedia\Admin\App\Repositories\DataTypes\DataTypesInterface;
+use Doitonlinemedia\Admin\App\Repositories\DataTypes\DataTypesRepository;
 use Illuminate\Http\Request;
 
 use App\Http\Requests;

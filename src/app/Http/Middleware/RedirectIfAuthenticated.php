@@ -1,6 +1,6 @@
 <?php
 
-namespace ADoitOnlineMedia\Admin\App\Http\Middleware;
+namespace Doitonlinemedia\Admin\App\Http\Middleware;
 
 use Closure;
 use Illuminate\Support\Facades\Auth;

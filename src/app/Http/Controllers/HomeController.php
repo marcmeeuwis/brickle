@@ -1,6 +1,6 @@
 <?php
 
-namespace DoitOnlineMedia\Admin\App\Http\Controllers;
+namespace Doitonlinemedia\Admin\App\Http\Controllers;
 
 use App\Http\Requests;
 use App\Http\Controllers\Controller;

@@ -1,15 +1,15 @@
 <?php
 
-namespace App\Repositories\DocumentTypes;
+namespace Doitonlinemedia\Admin\App\Repositories\DocumentTypes;
 
-use DoitOnlineMedia\Admin\App\Models\DocumentType;
-use App\Repositories\BaseRepository;
+use Doitonlinemedia\Admin\App\Models\DocumentType;
+use Doitonlinemedia\Admin\App\Repositories\BaseRepository;
 use Illuminate\Support\Facades\Input;
 use Illuminate\Support\Facades\Validator;
 
 class DocumentTypesRepository extends BaseRepository
 {
-    protected $model = 'DoitOnlineMedia\Admin\App\Models\DocumentType';
+    protected $model = 'Doitonlinemedia\Admin\App\Models\DocumentType';
     protected $relationships = [];
 
     public function get($aliasOrId){

@@ -1,10 +1,11 @@
-<?php namespace DoitOnlineMedia\Admin\Modules\Developer\Http\Controllers;
+<?php namespace Doitonlinemedia\Admin\Modules\Developer\Http\Controllers;
 
-use App\Http\Requests\StoreDocumentTypeRequest;
+
 use Illuminate\Support\Facades\Input;
-use DoitOnlineMedia\Admin\Modules\Developer\Helpers\PropertyHelper;
-use DoitOnlineMedia\Admin\App\Models\Property;
-use DoitOnlineMedia\Admin\App\Models\Tab;
+use Doitonlinemedia\Admin\Modules\Developer\Helpers\PropertyHelper;
+use Doitonlinemedia\Admin\App\Models\Property;
+use Doitonlinemedia\Admin\App\Models\Tab;
+use Illuminate\Support\Facades\Request;
 use Laracasts\Utilities\JavaScript\JavaScriptFacade as JavaScript;
 use App\Services\DocumentTypeService;
 use App\Services\PropertyService;
@@ -32,13 +33,13 @@ class DocumentTypeController extends Controller {
         return view('developer::backend.documents.types.create');
     }
 
-    public function store(StoreDocumentTypeRequest $request, $id = null)
+    public function store(Request $request, $id = null)
     {
         $docType = $this->documentTypeService->createOrUpdate($id);
         return redirect()->route('cms.developer.document.types.edit', [$docType->id]);
     }
 
-    public function update(StoreDocumentTypeRequest $request, $id)
+    public function update(Request $request, $id)
     {
         return $this->store($request, $id);
     }

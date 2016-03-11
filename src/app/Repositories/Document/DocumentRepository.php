@@ -1,14 +1,14 @@
 <?php
 
-namespace DoitOnlineMedia\Admin\App\Repositories\Document;
+namespace Doitonlinemedia\Admin\App\Repositories\Document;
 
-use DoitOnlineMedia\Admin\App\Models\DocumentSettings;
-use DoitOnlineMedia\Admin\App\Repositories\BaseRepository;
+use Doitonlinemedia\Admin\App\Models\DocumentSettings;
+use Doitonlinemedia\Admin\App\Repositories\BaseRepository;
 use Auth;
 
 class DocumentRepository extends BaseRepository
 {
-    protected $model = 'DoitOnlineMedia\Admin\App\Models\Document';
+    protected $model = 'Doitonlinemedia\Admin\App\Models\Document';
 
     public $requiredRelationships = ['settings'];
 

@@ -13,7 +13,7 @@
     <tbody>
     @if($properties)
         @foreach($properties as $property)
-            {!! \DoitOnlineMedia\Admin\Modules\Developer\Helpers\PropertyHelper::getPropertyTableRow($property, $tabs, $types)->render() !!}
+            {!! \Doitonlinemedia\Admin\Modules\Developer\Helpers\PropertyHelper::getPropertyTableRow($property, $tabs, $types)->render() !!}
         @endforeach
     @endif
     </tbody>

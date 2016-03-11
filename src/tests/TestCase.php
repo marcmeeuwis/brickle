@@ -1,6 +1,6 @@
 <?php
 
-namespace DoitOnlineMedia\Admin\Tests;
+namespace Doitonlinemedia\Admin\Tests;
 
 class TestCase extends \Illuminate\Foundation\Testing\TestCase
 {
