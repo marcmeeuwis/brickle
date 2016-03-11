@@ -1,0 +1,109 @@
+$navbarLeftWidth: 100px;
+$mainColor: #5e35b1;
+$contentSubMenuWidth: 200px;
+
+.login {
+  background:none;
+
+  .container {
+    margin-top:100px;
+  }
+}
+
+.main-container {
+  width:100%;
+  padding-left: $navbarLeftWidth;
+
+  &.container-padding {
+    padding:20px 20px 20px $navbarLeftWidth + 20px;
+  }
+
+  &.with-content-menu {
+    padding-left: $contentSubMenuWidth + $navbarLeftWidth + 20px;
+  }
+
+  .row {
+    margin:0;
+  }
+}
+
+.navbar {
+  margin-bottom: 0;
+  border-radius: 0;
+
+  > .container-fluid {
+    padding: 0;
+    height: 100%;
+
+    li {
+      &.active, &:hover {
+        a {
+          color: $mainColor;
+        }
+      }
+      a {
+        color: $mainColor;
+      }
+    }
+  }
+
+  &.navbar-left {
+    width: $navbarLeftWidth;
+    float: left;
+    height: 100%;
+    background:#0e0e0e;
+    position: absolute;
+    left:0;
+    top:60px;
+
+    .navbar-collapse {
+      padding: 0;
+
+      li {
+        width: 100%;
+        padding: 10px 0;
+
+        a {
+          font-size: 20px;
+          text-align: center;
+          color:#666;
+        }
+
+        &.active, &:hover {
+          a {
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+
+  &.navbar-top {
+    background: #efefef;
+    height: 60px;
+    border-bottom: 1px solid $mainColor;
+
+    .navbar-header {
+      background: #5e35b1;
+      width: $contentSubMenuWidth + $navbarLeftWidth;
+      height: 100%;
+      padding-left: 15px;
+
+      .navbar-brand {
+        height: 100%;
+        color: #fff;
+        text-transform: uppercase;
+      }
+    }
+
+  }
+
+  &.navbar-content {
+    width:200px;
+    position: absolute;
+    left:100px;
+    background:#efefef;
+    height:100%;
+    border-right: 1px solid $mainColor;
+  }
+}

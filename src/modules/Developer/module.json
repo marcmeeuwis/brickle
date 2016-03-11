@@ -1,0 +1,15 @@
+{
+    "name": "Developer",
+    "alias": "developer",
+    "description": "Module to that handles all the developer stuff like: creating modules, document types and more.",
+    "keywords": [],
+    "active": 1,
+    "order": 0,
+    "providers": [
+        "Modules\\Developer\\Providers\\DeveloperServiceProvider"
+    ],
+    "aliases":{},
+    "files": [
+        "start.php"
+    ]
+}
