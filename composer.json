@@ -10,7 +10,8 @@
     "minimum-stability": "dev",
     "require": {
         "pingpong/modules": "~2.2",
-        "laracasts/utilities": "~2.0"
+        "laracasts/utilities": "~2.0",
+        "edvinaskrucas/notification": "^5.1"
     },
     "autoload": {
         "psr-4": {
