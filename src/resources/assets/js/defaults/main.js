@@ -1,7 +1,4 @@
 $(function() {
-    // activate bootstrap dropdown
+    // bootstrap dropdown
     $('.dropdown-toggle').dropdown();
-
-    // activate bootstrap tooltips
-    $('[data-toggle="tooltip"]').tooltip()
 });
