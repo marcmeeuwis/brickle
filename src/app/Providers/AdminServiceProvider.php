@@ -99,8 +99,8 @@ class AdminServiceProvider extends ServiceProvider
             __DIR__.'/../../resources/views' => resource_path('views/'.config('admin.publish_path')),
         ]);
 
-//        $this->publishes([
-//            __DIR__.'/../../tests' => base_path('tests/'.config('admin.publish_path')),
-//        ]);
+        $this->publishes([
+            __DIR__.'/../../tests' => base_path('tests/'.config('admin.publish_path')),
+        ]);
     }
 }
