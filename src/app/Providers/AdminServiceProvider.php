@@ -10,6 +10,8 @@ class AdminServiceProvider extends ServiceProvider
 {
     protected $moduleServiceProvider;
 
+    private $publishPath = 'vendor/doitonlinemedia/admin';
+
     /**
      * AdminServiceProvider constructor.
      * @param \Illuminate\Contracts\Foundation\Application $app
@@ -89,7 +91,7 @@ class AdminServiceProvider extends ServiceProvider
         ], 'config');
 
         $this->publishes([
-            __DIR__.'/../../resources/assets' => public_path(config('admin.publish_path')),
+            __DIR__.'/../../resources/assets' => public_path($this->publishPath),
         ], 'public');
 
 
@@ -98,11 +100,11 @@ class AdminServiceProvider extends ServiceProvider
         ], 'database');
 
         $this->publishes([
-            __DIR__.'/../../resources/views' => resource_path('views/'.config('admin.publish_path')),
+            __DIR__.'/../../resources/views' => resource_path('views/'.$this->publishPath),
         ]);
 
         $this->publishes([
-            __DIR__.'/../../tests' => base_path('tests/'.config('admin.publish_path')),
+            __DIR__.'/../../tests' => base_path('tests/'.$this->publishPath),
         ]);
     }
 }
