@@ -15,6 +15,8 @@ class AuthController extends Controller
 
     protected $loginView = 'admin::auth.login';
 
+    protected $username = 'username';
+
     /**
      * Create a new authentication controller instance.
      *
