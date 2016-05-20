@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Database\Seeder;
-use App\Models\Profile;
+use Doitonlinemedia\Admin\App\Models\Profile;
 
 class ProfileTableSeeder extends Seeder {
 

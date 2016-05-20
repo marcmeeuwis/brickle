@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Database\Seeder;
-use App\Models\Tab;
+use Doitonlinemedia\Admin\App\Models\Tab;
 
 class TabTableSeeder extends Seeder {
 

@@ -31,6 +31,8 @@ class AdminServiceProvider extends ServiceProvider
         // Load some helper functions
         require_once __DIR__.'/../Helpers/helpers.php';
 
+        config(['auth.providers.users.model' => \Doitonlinemedia\Admin\App\Models\User::class]);
+
         // Register package middleware
         new Kernel($this->app, $this->app['router']);
 

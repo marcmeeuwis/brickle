@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Database\Seeder;
-use App\Models\DocType;
+use Doitonlinemedia\Admin\App\Models\DocumentType;
 
 class DocTypeTableSeeder extends Seeder {
 
@@ -10,7 +10,7 @@ class DocTypeTableSeeder extends Seeder {
 		//DB::table('document_types')->delete();
 
 		// Default Document Type
-		DocType::create(array(
+		DocumentType::create(array(
 				'name' => 'home',
 				'alias' => 'home',
 				'icon' => ''

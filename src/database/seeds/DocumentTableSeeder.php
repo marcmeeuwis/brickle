@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Database\Seeder;
-use App\Models\Document;
+use Doitonlinemedia\Admin\App\Models\Document;
 
 class DocumentTableSeeder extends Seeder {
 

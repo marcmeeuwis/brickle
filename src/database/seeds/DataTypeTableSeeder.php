@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Database\Seeder;
-use App\Models\DataType;
+use Doitonlinemedia\Admin\App\Models\DataType;
 
 class DataTypeTableSeeder extends Seeder {
 

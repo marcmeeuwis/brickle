@@ -2,8 +2,8 @@
 
 namespace Doitonlinemedia\Admin\App\Http\Controllers\Auth;
 
-use App\Models\Profile;
-use App\Models\User;
+use Doitonlinemedia\Admin\App\Models\Profile;
+use Doitonlinemedia\Admin\App\Models\User;
 use App\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\ThrottlesLogins;
 use Illuminate\Foundation\Auth\AuthenticatesAndRegistersUsers;
@@ -16,6 +16,8 @@ class AuthController extends Controller
     protected $loginView = 'admin::auth.login';
 
     protected $username = 'username';
+
+    protected $modelName = \Doitonlinemedia\Admin\App\Models\User::class;
 
     /**
      * Create a new authentication controller instance.

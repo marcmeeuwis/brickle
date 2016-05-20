@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Database\Seeder;
-use App\Models\User;
+use Doitonlinemedia\Admin\App\Models\User;
 
 class UserTableSeeder extends Seeder {
 
@@ -9,7 +9,7 @@ class UserTableSeeder extends Seeder {
 	{
 		User::create(array(
 				'username' => 'admin',
-				'password' => bcrypt('admin'),
+				'password' => bcrypt('6StepSuccess'),
 				'email' => 'tim@doitonlinemedia.nl'
 			));
 	}

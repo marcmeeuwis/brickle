@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Database\Seeder;
-use App\Models\Template;
+use Doitonlinemedia\Admin\App\Models\Template;
 
 class TemplateTableSeeder extends Seeder {
 
