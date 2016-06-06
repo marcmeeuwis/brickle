@@ -1,5 +1,4 @@
 <?php
-
 namespace Doitonlinemedia\Admin\Tests;
 
 class TestCase extends \Illuminate\Foundation\Testing\TestCase
@@ -9,7 +8,7 @@ class TestCase extends \Illuminate\Foundation\Testing\TestCase
      *
      * @var string
      */
-    protected $baseUrl = 'http://localhost';
+    protected $baseUrl = 'http://localhost:8000';
 
     /**
      * Creates the application.
@@ -18,7 +17,7 @@ class TestCase extends \Illuminate\Foundation\Testing\TestCase
      */
     public function createApplication()
     {
-        $app = require '/bootstrap/app.php';
+        $app = require base_path('bootstrap/app.php');
 
         $app->make(\Illuminate\Contracts\Console\Kernel::class)->bootstrap();
 

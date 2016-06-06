@@ -1,9 +1,5 @@
 @extends('admin::layouts.master')
 
-@section('css')
-    <link rel="stylesheet" href="{{ asset('modules/developer/developer.css') }}">
-@append
-
 @section('content')
     <div class="container main-container container-padding">
         <div class="row">
