@@ -21,7 +21,7 @@ class IsItRunningTest extends TestCase
         $this->visit('/'.config('admin.cms_path').'/login');
         $this->see('Login');
         $this->type('admin', 'username');
-        $this->type('6StepSuccess', 'password');
+        $this->type('admin', 'password');
         $this->type('_token', csrf_token());
         $this->press('Login');
         $this->seePageIs(config('admin.cms_path').'/');
