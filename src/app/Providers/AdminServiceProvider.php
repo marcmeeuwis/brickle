@@ -97,9 +97,9 @@ class AdminServiceProvider extends ServiceProvider
         ], 'public');
 
 
-        $this->publishes([
-            __DIR__.'/../../database/' => database_path()
-        ], 'database');
+//        $this->publishes([
+//            __DIR__.'/../../database/' => database_path()
+//        ], 'database');
 
         $this->publishes([
             __DIR__.'/../../resources/views' => resource_path('views/'.$this->publishPath),
