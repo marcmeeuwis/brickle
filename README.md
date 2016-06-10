@@ -18,3 +18,5 @@ Run `php artisan db:seed --class="Doitonlinemedia\Admin\DoitonlinemediaDatabaseS
 Run: `php artisan vendor:publish`
 
 Go to /brickle to login or change the path in the admin.php config file in the config folder.
+
+Login credentials are: admin - [default password]
