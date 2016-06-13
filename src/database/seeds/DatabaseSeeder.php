@@ -1,38 +1,36 @@
-<?php
+<?php namespace Doitonlinemedia\Admin;
 
 use Illuminate\Database\Seeder;
 use Illuminate\Database\Eloquent\Model;
 
-class DatabaseSeeder extends Seeder {
+class AdminDatabaseSeeder extends Seeder {
 
 	public function run()
 	{
 		Model::unguard();
 
-		$this->call('UserTableSeeder');
+		$this->call('Doitonlinemedia\Admin\UserTableSeeder');
 		$this->command->info('User table seeded!');
 
-		$this->call('TemplateTableSeeder');
+		$this->call('Doitonlinemedia\Admin\TemplateTableSeeder');
 		$this->command->info('Template table seeded!');
 
-		$this->call('DocTypeTableSeeder');
+		$this->call('Doitonlinemedia\Admin\DocTypeTableSeeder');
 		$this->command->info('DocType table seeded!');
 
-		$this->call('ProfileTableSeeder');
+		$this->call('Doitonlinemedia\Admin\ProfileTableSeeder');
 		$this->command->info('Profile table seeded!');
 
-		$this->call('TabTableSeeder');
+		$this->call('Doitonlinemedia\Admin\TabTableSeeder');
 		$this->command->info('Tab table seeded!');
 
-		$this->call('DataTypeTableSeeder');
+		$this->call('Doitonlinemedia\Admin\DataTypeTableSeeder');
 		$this->command->info('DataType table seeded!');
 
-		$this->call('DocumentTableSeeder');
+		$this->call('Doitonlinemedia\Admin\DocumentTableSeeder');
 		$this->command->info('Document table seeded!');
 
-
-
-		$this->call('DocumentSettingsTableSeeder');
+		$this->call('Doitonlinemedia\Admin\DocumentSettingsTableSeeder');
 		$this->command->info('DocumentSettings table seeded!');
 	}
 }

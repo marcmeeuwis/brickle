@@ -1,4 +1,4 @@
-<?php
+<?php namespace Doitonlinemedia\Admin;
 
 use Illuminate\Database\Seeder;
 use Doitonlinemedia\Admin\App\Models\Document;
