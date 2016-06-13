@@ -5,7 +5,7 @@
 
 ### Installation ###
 
-Run: `composer require doitonlinemedia/admin "dev-master"`
+Run: `composer require doitonlinemedia/admin`
 
 Run: `composer dumpautoload -o`
 
