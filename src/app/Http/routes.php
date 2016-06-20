@@ -2,29 +2,27 @@
 
 Route::group([
 
-   'namespace' => 'Doitonlinemedia\Admin\App\Http\Controllers',
-   'prefix' => config('admin.cms_path'),
-   'as' => 'admin::',
-   'middleware' => ['web']],
+    'namespace' => 'Doitonlinemedia\Admin\App\Http\Controllers',
+    'prefix' => config('admin.cms_path'),
+    'as' => 'admin::',
+    'middleware' => ['web']],
 
-function () {
+    function () {
 
-   RouteHelper::auth();
+        RouteHelper::auth();
 
-   Route::group(['middleware' => ['admin.auth', 'admin.web']], function() {
+        Route::group(['middleware' => ['admin.auth', 'admin.web']], function() {
 
-      Route::get('/', ['as' => 'index', 'uses' => 'HomeController@index']);
+            Route::get('/', ['as' => 'index', 'uses' => 'HomeController@index']);
 
-       Route::get('test', function() {
-           $repo = new \App\Repositories\DocumentRepository\DocumentEloquentRepository;
+            
+            Route::get('test', function() {
+                $repo = new Doitonlinemedia\Admin\App\Repositories\DocumentRepository\DocumentEloquentRepository;
+                
+            });     
 
-           dd($repo->latest([
-               ['slug' => '/']
-           ]));
-       });
+            RouteHelper::resource('content', 'ContentController');
 
-      RouteHelper::resource('content', 'ContentController');
-
-   });
+        });
 
 });

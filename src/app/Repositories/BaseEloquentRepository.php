@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Repositories;
+namespace Doitonlinemedia\Admin\App\Repositories;
 
 use Illuminate\Database\Eloquent\Model;
 
-abstract class BaseEloquentRepository implements RepositoryContract, BaseEloquentRepositoryInterface
+abstract class BaseEloquentRepository implements BaseRepository
 {
     /**
      * Name of model associated with this repository
@@ -155,11 +155,14 @@ abstract class BaseEloquentRepository implements RepositoryContract, BaseEloquen
      *
      * @return \Illuminate\Database\Eloquent\Model
      */
-    public function latest($where = [])
+    public function latest()
     {
+        return $this->model->orderBy('created_at', 'DESC')->first();
+        /*
         return $this->model->where(function($q) use($where, $this) {
             $this->where($q, $where);
         })->orderBy('created_at', 'DESC')->first();
+        */
     }
 
     /**

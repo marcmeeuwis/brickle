@@ -5,9 +5,9 @@
  * Date: 20-6-16
  * Time: 11:02
  */
-namespace App\Repositories;
+namespace Doitonlinemedia\Admin\App\Repositories;
 
-interface BaseEloquentRepositoryInterface
+interface BaseRepository
 {
     /**
      * Get all items

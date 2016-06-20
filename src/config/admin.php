@@ -16,6 +16,7 @@ return [
         \Doitonlinemedia\Admin\App\Providers\ModuleServiceProvider::class,
         \Doitonlinemedia\Admin\Modules\Developer\Providers\DeveloperServiceProvider::class,
         \Doitonlinemedia\Admin\App\Providers\ComposerServiceProvider::class,
+        \Doitonlinemedia\Admin\App\Providers\RepositoryServiceProvider::class,
         \Laracasts\Utilities\JavaScript\JavaScriptServiceProvider::class,
         \Krucas\Notification\NotificationServiceProvider::class,
     ],
