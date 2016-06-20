@@ -19,6 +19,7 @@
     @yield('content')
 
     <script src="{{ admin_asset('js/all.js') }}"></script>
+
     @yield('scripts')
 </body>
 </html>
