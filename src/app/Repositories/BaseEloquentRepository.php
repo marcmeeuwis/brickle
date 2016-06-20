@@ -158,11 +158,6 @@ abstract class BaseEloquentRepository implements BaseRepository
     public function latest()
     {
         return $this->model->orderBy('created_at', 'DESC')->first();
-        /*
-        return $this->model->where(function($q) use($where, $this) {
-            $this->where($q, $where);
-        })->orderBy('created_at', 'DESC')->first();
-        */
     }
 
     /**

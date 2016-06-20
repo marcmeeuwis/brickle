@@ -7,5 +7,5 @@ use Doitonlinemedia\Admin\App\Models\Document;
 
 class DocumentEloquentRepository extends BaseEloquentRepository implements DocumentRepository
 {
-    protected $model = Document::class;
+    public $model = Document::class;
 }
