@@ -23,13 +23,13 @@ class ComposerServiceProvider extends ServiceProvider
      *
      * @return void
      */
-    public function boot(DocumentRepository $documentRepository)
+    public function boot()
     {
 
-        view()->composer('admin::content.layout', function($view) use($documentRepository) {
-            $documents = $documentRepository->all();
-            $view->with('documents', $documents);
-        });
+//        view()->composer('admin::content.layout', function($view) use($documentRepository) {
+//            $documents = $documentRepository->all();
+//            $view->with('documents', $documents);
+//        });
 
     }
 
