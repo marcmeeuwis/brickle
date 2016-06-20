@@ -16,10 +16,7 @@ Route::group([
             Route::get('/', ['as' => 'index', 'uses' => 'HomeController@index']);
 
             
-            Route::get('test', function() {
-                $repo = new Doitonlinemedia\Admin\App\Repositories\DocumentRepository\DocumentEloquentRepository;
-                
-            });     
+            Route::get('test', 'TestController@index');
 
             RouteHelper::resource('content', 'ContentController');
 

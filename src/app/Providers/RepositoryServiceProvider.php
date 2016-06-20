@@ -7,6 +7,10 @@ use Illuminate\Support\ServiceProvider;
 use Doitonlinemedia\Admin\App\Repositories\BaseRepository;
 use Doitonlinemedia\Admin\App\Repositories\BaseEloquentRepository;
 
+use Doitonlinemedia\Admin\App\Repositories\DocumentRepository\DocumentRepository;
+use Doitonlinemedia\Admin\App\Repositories\DocumentRepository\DocumentEloquentRepository;
+
+
 class RepositoryServiceProvider extends ServiceProvider
 {
     /**
@@ -27,6 +31,7 @@ class RepositoryServiceProvider extends ServiceProvider
     public function register()
     {
         $this->app->bind(BaseRepository::class, BaseEloquentRepository::class);
+        $this->app->bind(DocumentRepository::class, DocumentEloquentRepository::class);
     }
 
   
