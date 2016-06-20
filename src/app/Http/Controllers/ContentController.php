@@ -4,7 +4,6 @@ namespace  Doitonlinemedia\Admin\App\Http\Controllers;
 
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
-use Doitonlinemedia\Admin\App\Repositories\Document\DocumentRepository;
 use Krucas\Notification\Facades\Notification;
 
 class ContentController extends Controller
@@ -12,15 +11,16 @@ class ContentController extends Controller
 
     protected $documentRepository;
 
-    public function __construct(DocumentRepository $documentRepository)
+    public function __construct()
     {
-        $this->documentRepository = $documentRepository;
+
     }
 
     public function index()
     {
+        $documents = [];
         Notification::success('Success message');
-        return view('admin::content.index');
+        return view('admin::content.index', compact('documents'));
     }
 
     public function create()
