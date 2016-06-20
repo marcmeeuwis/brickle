@@ -15,6 +15,14 @@ function () {
 
       Route::get('/', ['as' => 'index', 'uses' => 'HomeController@index']);
 
+       Route::get('test', function() {
+           $repo = new \App\Repositories\DocumentRepository\DocumentEloquentRepository;
+
+           dd($repo->latest([
+               ['slug' => '/']
+           ]));
+       });
+
       RouteHelper::resource('content', 'ContentController');
 
    });

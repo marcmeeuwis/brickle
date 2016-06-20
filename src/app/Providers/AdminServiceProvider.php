@@ -4,8 +4,6 @@ namespace Doitonlinemedia\Admin\App\Providers;
 
 use Doitonlinemedia\Admin\App\Http\Kernel;
 use Illuminate\Support\ServiceProvider;
-use Doitonlinemedia\Admin\Modules\Developer\Providers\DeveloperServiceProvider;
-
 class AdminServiceProvider extends ServiceProvider
 {
     protected $moduleServiceProvider;
